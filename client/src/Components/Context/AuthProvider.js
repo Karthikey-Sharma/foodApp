@@ -13,7 +13,7 @@ function AuthProvider({ children }) {
     const [loading, setLoading] = useState(false);
 
     async function signUp(name,email,password,confirmPassword) {
-        const data = await axios.post("/user/signup", {
+        const data = await axios.post("https://pizzaboy.onrender.com/user/signup", {
             name:name,
             email: email,
             password: password,
@@ -24,7 +24,7 @@ function AuthProvider({ children }) {
     }
     async function login(email, password) {
         try {
-            const data = await axios.post("/user/login", {
+            const data = await axios.post("https://pizzaboy.onrender.com/user/login", {
                 email: email,
                 password: password
             });
@@ -40,7 +40,7 @@ function AuthProvider({ children }) {
     }
     async function logout() {
         localStorage.removeItem("user")
-        const data = await axios.get("/user/logout");
+        const data = await axios.get("https://pizzaboy.onrender.com/user/logout");
         console.log(data);
         userSet(null);
     }

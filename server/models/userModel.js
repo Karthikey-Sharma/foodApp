@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongo_uri = process.env.MONGODB_URI
+const mongo_uri = "mongodb+srv://admin:1r4iUm6EaxeZkky8@cluster0.jxlhgv9.mongodb.net/?retryWrites=true&w=majority"
 
 const emailValidator = require('email-validator');
 const bcrypt = require('bcrypt');
@@ -8,7 +8,6 @@ const crypto = require('crypto');
 const db_link = mongo_uri
 mongoose.connect(db_link)
 .then(function(db){
-          //console.log(db);
           console.log("DataBase Connected");
 })
 .catch(function(err){

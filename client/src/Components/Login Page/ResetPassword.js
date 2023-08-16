@@ -12,7 +12,7 @@ function ResetPassword() {
     const [confirm, setConfirm] = useState("");
     const handleResetPassword=async()=>{
         try{
-            const data=await axios.post("/user/resetpassword/:token",{
+            const data=await axios.post("https://pizzaboy.onrender.com/user/resetpassword/:token",{
                 password:password,
                 confirmPassword:confirm
             });

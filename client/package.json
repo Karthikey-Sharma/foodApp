@@ -1,7 +1,7 @@
 {
   "name": "foodapp",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://pizzaboy.onrender.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

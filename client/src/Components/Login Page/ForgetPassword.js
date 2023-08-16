@@ -12,7 +12,7 @@ function ForgetPassword() {
 
     const handleForgetPassword=async()=>{
         try{
-            const data=await axios.post("/user/forgetpassword",{
+            const data=await axios.post("https://pizzaboy.onrender.com/user/forgetpassword",{
                 email:email
             });
             history.push("/resetpassword")

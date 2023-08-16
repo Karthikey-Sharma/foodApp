@@ -5,8 +5,6 @@ server/node_modules/
 
 # Compiled output
 build/
-dist/
-public/
 
 # OS generated files
 .DS_Store

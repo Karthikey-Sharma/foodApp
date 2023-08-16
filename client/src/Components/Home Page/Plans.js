@@ -9,7 +9,7 @@ function Plans() {
 
     useEffect(async () => {
         try {
-            const data = await axios.get("/plans/top3");
+            const data = await axios.get("https://pizzaboy.onrender.com/plans/top3");
             console.log(data,23443);
             arrset(data.data.data);
             

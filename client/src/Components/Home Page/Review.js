@@ -8,7 +8,7 @@ function Review() {
 
     useEffect(async () => {
         try {
-            const data = await axios.get("/review/top3");
+            const data = await axios.get("https://pizzaboy.onrender.com/review/top3");
             console.log(data);
             setarr(data.data.data);
             // console.log(data.data.length);
