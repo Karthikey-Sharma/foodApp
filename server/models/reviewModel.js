@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db_link = 'mongodb+srv://admin:1r4iUm6EaxeZkky8@cluster0.jxlhgv9.mongodb.net/?retryWrites=true&w=majority';
+const db_link = '';
 mongoose.connect(db_link)
   .then(function(db) {
     console.log("DataBase Connected");
